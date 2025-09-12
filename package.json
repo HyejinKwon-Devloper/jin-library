@@ -1,0 +1,29 @@
+{
+  "name": "jin-library",
+  "version": "1.0.0",
+  "description": "자주쓰이는 library모음",
+  "homepage": "https://github.com/HyejinKwon-Devloper/jin-library#readme",
+  "bugs": {
+    "url": "https://github.com/HyejinKwon-Devloper/jin-library/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HyejinKwon-Devloper/jin-library.git"
+  },
+  "license": "ISC",
+  "author": "hyejin kwon",
+  "type": "commonjs",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.3.1",
+    "dotenv": "^17.2.2",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  }
+}
