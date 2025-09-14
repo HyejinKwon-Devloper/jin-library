@@ -13,3 +13,24 @@ function throttle(callback: (args: any) => any, delay: number = 1000) {
     }, delay);
   };
 }
+
+function debounce(callback: (args: any) => any, delay: number = 1000) {
+  let timer: null | NodeJS.Timeout = null;
+
+  return (args: any) => {
+    if (timer !== null) {
+      clearTimeout(timer);
+      timer = setTimeout((args: any) => {
+        callback(args);
+        timer = null;
+      }, delay);
+    } else {
+      callback(args);
+    }
+  };
+}
+
+module.exports = {
+  debounce,
+  throttle,
+};
